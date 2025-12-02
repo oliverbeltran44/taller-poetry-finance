@@ -1,0 +1,19 @@
+[project]
+name = "taller-poetry-finance"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Oliver Beltran",email = "oliverbeltran44@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests (>=2.32.5,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "taller_poetry_finance", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
